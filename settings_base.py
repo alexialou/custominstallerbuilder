@@ -102,8 +102,13 @@ RESERVED_PUBLIC_KEY = ('22599311712094481841033180665237806588790054310631' +
 # below are just sensible defaults or examples.
 
 # Unless you are actively debugging, these should be set to False.
+
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
+
+# In DEBUG=False mode Django requires the setting ALLOWED_HOST listing allowed hosts, 
+# or else it responds with HTTP 400 (Bad request)
+ALLOWED_HOST = []
 
 SECRET_KEY = '***** This should be changed to a random string *****'
 
