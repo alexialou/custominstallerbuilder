@@ -30,6 +30,10 @@ SECRET_KEY = '***** This should be changed to a random string *****'
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+# In DEBUG = False mode Django requires the setting ALLOWED_HOST listing allowed hosts, 
+# or else it responds with HTTP 400 (Bad request)
+# ALLOWED_HOST = []
+
 # During testing, you may want to use Django's built-in static file server.
 SERVE_STATIC = False
 STATIC_BASE = 'static/'
